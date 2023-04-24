@@ -15,7 +15,7 @@ const nextConfig = {
   webpack(config, options) {
     config.plugins.push(
       new NextFederationPlugin({
-        name: 'checkout',
+        name: 'mfe-remote',
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
           './sub-app-page': './src/app/sub-app/page.js'
